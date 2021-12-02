@@ -1,0 +1,46 @@
+{
+  "plugins": [
+    "@typescript-eslint",
+    "simple-import-sort",
+    "import",
+    "react-native"
+  ],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react-native/all",
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/named": "off",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "sort-imports": "off",
+    "import/order": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "react-native/no-color-literals": "off",
+    "react-native/no-inline-styles": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "react-native/no-raw-text": "off",
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "settings": {
+    "import/ignore": ["node_modules/react-native/index\\.js$","react-native"]
+  }
+}
